@@ -16,6 +16,8 @@ public class AppTest {
         App app = new App(new ItemRepositoryTestImpl(), new SalesPromotionRepositoryTestImpl());
         String receiptString = app.bestCharge(inputs);
 
+        System.out.println(receiptString);
+
         assertThat(receiptString, is("============= Order details =============\n" +
                 "Braised chicken x 1 = 18 yuan\n" +
                 "Chinese hamburger x 2 = 12 yuan\n" +
@@ -36,6 +38,8 @@ public class AppTest {
         App app = new App(new ItemRepositoryTestImpl(), new SalesPromotionRepositoryTestImpl());
         String receiptString = app.bestCharge(inputs);
 
+        System.out.println(receiptString);
+
         assertThat(receiptString, is("============= Order details =============\n" +
                 "Chinese hamburger x 4 = 24 yuan\n" +
                 "Cold noodles x 1 = 8 yuan\n" +
@@ -55,6 +59,8 @@ public class AppTest {
 
         App app = new App(new ItemRepositoryTestImpl(), new SalesPromotionRepositoryTestImpl());
         String receiptString = app.bestCharge(inputs);
+
+        System.out.println(receiptString);
 
         assertThat(receiptString, is("============= Order details =============\n" +
                 "Chinese hamburger x 4 = 24 yuan\n" +
